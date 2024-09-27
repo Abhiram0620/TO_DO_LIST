@@ -1,0 +1,49 @@
+#main1{
+    margin: auto;
+    width: 440px;
+    border: 2px solid black;
+    margin-top: 100px;
+    height: 500px;
+    border-radius: 10px;
+   
+}
+#main1:hover{
+    box-shadow: -30px 20px 30px 30px  rgba(0, 0, 0, 0.3);
+}
+#mainlogo{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    float: left;
+}
+#mainheading{
+    margin-top: 30px;
+    margin-left: 150px;
+}
+#main1input{
+    margin-top: 20px;
+    padding: 10px;
+    margin-left:30px;
+    width: 280px;
+    display: flex;
+    float: left;
+    border-radius: 10px;
+}
+#main1button{
+    margin-top: 20px;
+    padding: 10px;
+    width: 80px;
+    border-radius: 5px;
+}
+#main1button:hover{
+    margin-top: 18px;
+    background-color: orange;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 12px;
+}
+#list{
+    margin: 20px;
+}

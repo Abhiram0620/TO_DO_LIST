@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main1">
+        <img id="mainlogo" src="logo.jpg" alt="Logo">
+        <h1 id="mainheading">TO-DO LIST</h1>
+        <form onsubmit="add(); return false;">
+            <input type="text" id="main1input" placeholder="Enter the work you want to do..." required>
+            <button id="main1button" type="submit">ADD</button>
+        </form>
+        <div id="main11">
+            <div id="list1">
+               
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function add() {
+            const input = document.getElementById("main1input");
+            const itemText = input.value.trim();
+            
+            if (itemText) {
+                const itemElement = document.createElement("p"); // or use "button" for buttons
+                itemElement.textContent = itemText;
+                document.getElementById("list1").appendChild(itemElement);
+                input.value = "";
+            }
+        }
+    </script>
+</body>
+</html>
