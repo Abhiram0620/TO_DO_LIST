@@ -15,23 +15,45 @@
             <button id="main1button" type="submit">ADD</button>
         </form>
         <div id="main11">
-            <div id="list1">
-               
-            </div>
+            <div id="list1"></div>
         </div>
     </div>
 
     <script>
+        let flag = true;
+
         function add() {
             const input = document.getElementById("main1input");
             const itemText = input.value.trim();
-            
+
             if (itemText) {
-                const itemElement = document.createElement("p"); // or use "button" for buttons
+                const itemElement = document.createElement("button");
                 itemElement.textContent = itemText;
+                itemElement.className = "dolist";
+                itemElement.addEventListener("click", toggleColor);
+
+                const clearButton = document.createElement("button");
+                clearButton.textContent = 'Clear';
+                clearButton.className = "clear";
+                clearButton.addEventListener("click", function() {
+                    itemElement.remove();
+                    clearButton.remove();
+                });
+
                 document.getElementById("list1").appendChild(itemElement);
+                document.getElementById("list1").appendChild(clearButton);
+
                 input.value = "";
             }
+        }
+
+        function toggleColor() {
+            if (flag) {
+                this.style.border = "2px solid black";
+            } else {
+                this.style.border = "2px solid lightgreen";
+            }
+            flag = !flag;
         }
     </script>
 </body>

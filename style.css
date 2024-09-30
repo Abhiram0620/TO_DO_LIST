@@ -1,16 +1,16 @@
-#main1{
+#main1 {
     margin: auto;
     width: 440px;
     border: 2px solid black;
     margin-top: 100px;
-    height: 500px;
     border-radius: 10px;
-   
 }
-#main1:hover{
-    box-shadow: -30px 20px 30px 30px  rgba(0, 0, 0, 0.3);
+
+#main1:hover {
+    box-shadow: -30px 20px 30px rgba(0, 0, 0, 0.3);
 }
-#mainlogo{
+
+#mainlogo {
     margin-top: 30px;
     margin-left: 30px;
     width: 40px;
@@ -18,32 +18,44 @@
     display: flex;
     float: left;
 }
-#mainheading{
+
+#mainheading {
     margin-top: 30px;
     margin-left: 150px;
 }
-#main1input{
+
+#main1input {
     margin-top: 20px;
     padding: 10px;
-    margin-left:30px;
+    margin-left: 30px;
     width: 280px;
-    display: flex;
-    float: left;
     border-radius: 10px;
 }
-#main1button{
+
+#main1button {
     margin-top: 20px;
     padding: 10px;
     width: 80px;
     border-radius: 5px;
 }
-#main1button:hover{
-    margin-top: 18px;
+
+#main1button:hover {
     background-color: orange;
     border: 2px solid white;
-    border-radius: 5px;
-    padding: 12px;
 }
-#list{
-    margin: 20px;
+
+#list1 {
+    display: block;
+    margin: 35px;
+}
+
+.dolist {
+    width: 80%;
+    height: 40px;
+    background-color: transparent;
+}
+
+.clear {
+    width: auto;
+    height: 40px;
 }
